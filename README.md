@@ -3,9 +3,9 @@ Website containing simple applications like calculator, weather app &amp; to-do 
 
 ## Table of Contents
 
-- [Calculator](#Calculator)
-- [Weather App](#Weather-App)
-- [To-Do List](#To-Do-List)
+- Calculator
+- Weather App
+- To-Do List
 
 ### Calculator 📱
 Simple calculator that allows you to do simple calculations.
