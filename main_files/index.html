@@ -14,18 +14,123 @@
 </head>
 <body>
 
-    <h1 id = "main-header">Simple Applications</h1>
-    <div class = "app-container">
-        <button class = "box calculator">
-            <p id = "app-title">Calculator</p>
-        </button>
-        <button class="box weather">
-            <p id = "app-title">Weather</p>
-        </button>
-        <button class="box todo">
-            <p id = "app-title">To-do List</p>
-        </button>
+    <div class="whole-page">
+
+        <h1 id = "main-header">Simple Applications</h1>
+        <div class="modal-container">
+            <div class="calc-modal">
+                <div class="display">
+                    <div class="content">
+                        <div class="input">
+
+                        </div>
+                        <div class="output">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="keys">
+
+                    <div data-key="clear" class="key action">
+                        <span>AC</span>
+                    </div>
+
+                    <div data-key="brackets" class="key action">
+                        <span>( )</span>
+                    </div>
+
+                    <div data-key="%" class="key action">
+                        <span>%</span>
+                    </div>
+
+                    <div data-key="/" class="key operator">
+                        <span>&divide;</span>
+                    </div>
+
+                    <div data-key="7" class="key">
+                        <span>7</span>
+                    </div>
+
+                    <div data-key="8" class="key">
+                        <span>8</span>
+                    </div>
+
+                    <div data-key="9" class="key">
+                        <span>9</span>
+                    </div>
+
+                    <div data-key="X" class="key operator">
+                        <span>&times;</span>
+                    </div>
+
+                    <div data-key="4" class="key">
+                        <span>4</span>
+                    </div>
+
+                    <div data-key="5" class="key">
+                        <span>5</span>
+                    </div>
+
+                    <div data-key="6" class="key">
+                        <span>6</span>
+                    </div>
+
+                    <div data-key="-" class="key operator">
+                        <span>&minus;</span>
+                    </div>
+
+                    <div data-key="1" class="key">
+                        <span>1</span>
+                    </div>
+
+                    <div data-key="2" class="key">
+                        <span>2</span>
+                    </div>
+
+                    <div data-key="3" class="key">
+                        <span>3</span>
+                    </div>
+
+                    <div data-key="+" class="key operator">
+                        <span>&plus;</span>
+                    </div>
+
+                    <div data-key="retry" class="key action">
+                        <span>&#10226;</span>
+                    </div>
+
+                    <div data-key="0" class="key">
+                        <span>0</span>
+                    </div>
+
+                    <div data-key="dot" class="key">
+                        <span>.</span>
+                    </div>
+                    <div data-key="-" class="key operator">
+                        <span>&equals;</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class = "app-container">
+            <button type = "submit" class = "box calculator">
+                <p id = "app-title">Calculator</p>
+            </button>
+            
+            <button type = "submit" class="box weather">
+                <p id = "app-title">Weather</p>
+            </button>
+            <button type = "submit" class="box todo">
+                <p id = "app-title">To-do List</p>
+            </button>
+        </div>
     </div>
+        
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,9 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.whole-page{
+
+    height: 1000px;
+    margin: 50px;
+}
 
 #main-header{
 
     font-family: 'Rubik', 'sans-serif';
     text-align: center;
-    padding: 50px;
+    padding: 50px 0px 25px;
 }
 
 .app-container{
@@ -12,7 +23,8 @@
     justify-content: center;
     gap: 1rem;
 
-    width: clamp(1rem, 60%, 33rem);
+    width: clamp(1rem, 60%, 32rem); 
+    min-height: fit-content;
     min-width: fit-content;
 
     background: rgba( 76, 67, 67, 0.25 );
@@ -33,8 +45,9 @@
 
     background-color: antiquewhite;
     border-radius: 15px;
-
     padding: 20px;
+
+    cursor: pointer;
 }
 
 #app-title{
@@ -55,5 +68,25 @@
 body {
     background: radial-gradient(ellipse at right bottom, #80FFDB 5%, #6efdd5 25%, #66a1e9 50%, #5390D9 100%) no-repeat;
     background-attachment: fixed;
+    padding-bottom: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.modal-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    /* transform: translate(-91px, 1100%) scale(0.1); */
+    padding: 10px 0px;
+}
+
+.calc-modal{
+    text-align: center;
+    width: 165px;
+    color: white;
+    background-color: #22252D;
+
 }
 
