@@ -12,9 +12,9 @@
     /* grid-template-columns: repeat(auto-fit, minmax(125px ,1fr)); */
     flex-wrap: wrap;
     justify-content: center;
-    grid-gap: 1rem;
+    gap: 1rem;
 
-    width: clamp(20%, 60% ,100%);
+    width: clamp(200px, 10%, 560px);
     min-width: fit-content;
     max-width: fit-content;
 
@@ -32,23 +32,29 @@
 .box {
     height: 125px;
     width: 125px;
+    /* flex: 1 1 calc(25%-10px); */
 
     background-color: antiquewhite;
     border-radius: 15px;
-    
+
     padding: 20px;
+}
+
+.box::after{
+    content: '';
+    display: block;
+    padding-bottom: 0%;
 }
 
 #app-title{
     display: table-cell;
-    
     height: 125px;
     width: 125px;
-
-    vertical-align: middle;
+    
+    margin: 0%;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    justify-items: center;
+    vertical-align: middle;
 
     font-family: 'Inter', 'sans-serif';
     font-size: 24px;
@@ -58,6 +64,5 @@
 body {
     background: radial-gradient(ellipse at right bottom, #80FFDB 5%, #6efdd5 25%, #66a1e9 50%, #5390D9 100%) no-repeat;
     background-attachment: fixed;
-    /* min-width: 500px; */
 }
 
