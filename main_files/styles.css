@@ -78,15 +78,43 @@ body {
     align-items: center;
     justify-content: center;
     visibility: visible;
+
     /* transform: translate(-91px, 1100%) scale(0.1); */
     padding: 10px 0px;
 }
 
 .calc-modal{
     text-align: center;
-    width: 165px;
     color: white;
     background-color: #22252D;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 375px;
+    min-height: 640px;
+    overflow: hidden;
+}
+
+.display{
+    min-height: 200px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    flex: 1 1 0%;
 
 }
 
+.display .input{
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.display .output{
+    font-size: 3rem;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
