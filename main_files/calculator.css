@@ -24,47 +24,54 @@
 .bar {
   display: flex;
   background-color: #313541;
-  width: 90%;
-  height: 40px;
+  width: 95%;
+  height: 25px;
   justify-content: right;
   align-items: center;
-  translate: 18.75px 10px;
+  translate: 9.375px 10px;
   /* border-radius: 0 0 20px 20px; */
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .bar-name {
   font-family: "Inter", "sans-serif";
-  font-weight: 400;
+  font-weight: 500;
   color: #949fc0;
-  justify-content: center;
   padding-right: 33.33%;
 }
 
 .bar-x {
   display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  all: unset;
+  
   font-family: "Inter", "sans-serif";
   font-weight: 600;
-  text-align: center;
-  justify-content: center;
   border-radius: 10px;
-  align-items: center;
+
   color: #e79e9e;
-  width: 18px;
+  width: 20px;
+  height: 15px;
   background-color: #eb6666;
-  margin: 0 15px 0 0;
+  margin: 0 5px 0 0;
   cursor: pointer;
 }
 
-.bar-x p {
-  flex: 0 0 120px;
+.bar-x img {
+  display:flex;
+  align-items: center;
+  
+  height: 10px;
+  width: 9.5px;
+}
+
+
+.bar-x:hover {
+  box-shadow: inset 0px 0px 8px rgba(255, 255, 255, 0.2);
 }
 
 .bar-x:active{
-  visibility: hidden;
-}
-
-.bar-x:hover {
   color: #eb6666;
   background-color: #c25555;
 }
