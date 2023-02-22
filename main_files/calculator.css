@@ -1,0 +1,105 @@
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: visible;
+
+  /* transform: translate(-91px, 1100%) scale(0.1); */
+  padding: 10px 0px;
+}
+
+.calc-modal {
+  text-align: center;
+  color: white;
+  background-color: #22252d;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 375px;
+  min-height: 640px;
+  overflow: hidden;
+}
+
+.display {
+  min-height: 200px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  flex: 1 1 0%;
+}
+
+.display .input {
+  font-family: "Inter", "sans-serif";
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.display .output {
+  font-family: "Inter", "sans-serif";
+  font-size: 3rem;
+  font-weight: 700;
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.display .operator {
+  color: #eb6666;
+}
+
+.display .brackets,
+.display .percent {
+  color: #4fe4cd;
+}
+
+.keys {
+  background-color: #2a2d37;
+  padding: 1.5rem;
+  border-radius: 15px 15px 0 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 1rem;
+  box-shadow: 0px -2px 16px rbga(0, 0, 0, 0.2);
+}
+
+.keys .key {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  height: 0;
+  padding-top: 100%;
+  background-color: #272a32;
+  border-radius: 15px;
+  transition: 0.2s;
+  user-select: none;
+}
+
+.keys .key.action span {
+  color: #4fe4cd;
+}
+.keys .key.operator span {
+  color: #eb6666;
+}
+
+.keys .key span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: "Inter", "sans-serif";
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.keys .key:hover {
+  box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+.keys .key:active {
+  background-color: #1e2027;
+}

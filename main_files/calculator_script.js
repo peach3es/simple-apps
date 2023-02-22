@@ -50,19 +50,19 @@ function CleanInput(input) {
 
   for (let i = 0; i < inptu_array_length; i++) {
     if (input_array[i] == "*") {
-      input_array[i] = `<span class = "operator">&times;</span>`;
+      input_array[i] = `<span class = "operator"> &times; </span>`;
     } else if (input_array[i] == "/") {
-      input_array[i] = `<span class = "operator">&divide;</span>`;
+      input_array[i] = `<span class = "operator"> &divide; </span>`;
     } else if (input_array[i] == "+") {
-      input_array[i] = `<span class = "operator">&plus;</span>`;
+      input_array[i] = `<span class = "operator"> &plus; </span>`;
     } else if (input_array[i] == "-") {
-      input_array[i] = `<span class = "operator">&minus;</span>`;
+      input_array[i] = `<span class = "operator"> &minus; </span>`;
     } else if (input_array[i] == "(") {
       input_array[i] = `<span class = "brackets">(</span>`;
     } else if (input_array[i] == ")") {
       input_array[i] = `<span class = "brackets">)</span>`;
     } else if (input_array[i] == "%") {
-      input_array[i] = `<span class = "%">%</span>`;
+      input_array[i] = `<span class = "%">&percnt; </span>`;
     }
   }
   return input_array.join("");
