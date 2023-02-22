@@ -40,7 +40,7 @@
   padding-right: 33.33%;
 }
 
-.bar-x {
+.bar-x {  /* button */
   display: flex;
   justify-content: center;
   vertical-align: middle;
@@ -56,14 +56,6 @@
   background-color: #eb6666;
   margin: 0 5px 0 0;
   cursor: pointer;
-}
-
-.bar-x img {
-  display:flex;
-  align-items: center;
-  
-  height: 10px;
-  width: 9.5px;
 }
 
 
