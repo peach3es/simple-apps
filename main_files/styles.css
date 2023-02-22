@@ -50,8 +50,9 @@
   cursor: pointer;
 }
 
-.box:hover {
-}
+/* .box:hover {
+
+} */
 
 #app-title {
   display: table-cell;
