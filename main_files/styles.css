@@ -7,7 +7,7 @@
   font-family: sans-serif;
 }
 .whole-page {
-  height: 1000px;
+  height: fit-content;
   margin: 50px;
 }
 
@@ -24,7 +24,7 @@
   gap: 1rem;
 
   width: clamp(1rem, 60%, 32rem);
-  min-height: fit-content;
+  min-height:max-content;
   min-width: fit-content;
 
   background: rgba(76, 67, 67, 0.25);

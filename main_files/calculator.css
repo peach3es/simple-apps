@@ -24,11 +24,13 @@
 .bar {
   display: flex;
   background-color: #313541;
-  width: 100%;
+  width: 90%;
   height: 40px;
   justify-content: right;
   align-items: center;
-  border-radius: 0 0 20px 20px;
+  translate: 18.75px 10px;
+  /* border-radius: 0 0 20px 20px; */
+  border-radius: 20px;
 }
 
 .bar-name {
@@ -40,16 +42,31 @@
 }
 
 .bar-x {
+  display: flex;
   font-family: "Inter", "sans-serif";
-  font-weight: 400;
-  color: #949fc0;
+  font-weight: 600;
+  text-align: center;
   justify-content: center;
-  padding: 0 4% 0 1%;
+  border-radius: 10px;
+  align-items: center;
+  color: #e79e9e;
+  width: 18px;
+  background-color: #eb6666;
+  margin: 0 15px 0 0;
   cursor: pointer;
+}
+
+.bar-x p {
+  flex: 0 0 120px;
+}
+
+.bar-x:active{
+  visibility: hidden;
 }
 
 .bar-x:hover {
   color: #eb6666;
+  background-color: #c25555;
 }
 
 .display {
@@ -65,7 +82,7 @@
 .display .input {
   font-family: "Inter", "sans-serif";
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 .display .output {
