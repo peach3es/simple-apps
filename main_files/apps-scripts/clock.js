@@ -1,0 +1,44 @@
+function Time(){
+
+    var date = new Date();
+
+    var hr = date.getHours();
+    var min = date.getMinutes();
+    // var sec = date.getSeconds();
+
+    var period = "";
+
+    if (hr >= 12){
+        period = "PM";
+    } else {
+        period = "AM";
+    }
+
+    if (hr == 0){
+        hr = 12;
+    } else {
+        if(hr > 12){
+            hr-=12;
+        }
+    }
+
+    hr = update(hr);
+    min = update(min);
+    // sec = update (sec);
+
+    document.getElementById("digital-clock").innerText = hr + " : " + min + " " + period;
+
+    setTimeout(Time, 1000);
+
+}
+
+function update(t) {
+    if (t < 10) {
+       return "0" + t;
+    }
+    else {
+        return t;
+    }
+}
+    
+Time();
