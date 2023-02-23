@@ -23,21 +23,23 @@
 
 .bar {
   display: flex;
-  background-color: #313541;
+  /* background-color: #313541; */
+  background-color: #22252d;
+
   width: 95%;
   height: 25px;
   justify-content: right;
   align-items: center;
   translate: 9.375px 10px;
   /* border-radius: 0 0 20px 20px; */
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .bar-name {
   font-family: "Inter", "sans-serif";
   font-weight: 500;
   color: #949fc0;
-  padding-right: 33.33%;
+  padding-right: 69%;
 }
 
 .bar-x {  /* button */
