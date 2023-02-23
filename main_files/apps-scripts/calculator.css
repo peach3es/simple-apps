@@ -35,7 +35,14 @@
   border-radius: 10px;
 }
 
-.bar-name {
+/* .bar-name {
+  font-family: "Inter", "sans-serif";
+  font-weight: 500;
+  color: #949fc0;
+  padding-right: 69%;
+} */
+
+#digital-clock{
   font-family: "Inter", "sans-serif";
   font-weight: 500;
   color: #949fc0;

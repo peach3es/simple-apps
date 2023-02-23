@@ -22,8 +22,8 @@ function Time(){
         }
     }
 
-    hr = update(hr);
-    min = update(min);
+    hr = updatehr(hr);
+    min = updatemin(min);
     // sec = update (sec);
 
     document.getElementById("digital-clock").innerText = hr + " : " + min + " " + period;
@@ -32,7 +32,16 @@ function Time(){
 
 }
 
-function update(t) {
+function updatehr(t) {
+    if (t < 10) {
+       return t;
+    }
+    else {
+        return t;
+    }
+}
+
+function updatemin(t) {
     if (t < 10) {
        return "0" + t;
     }
