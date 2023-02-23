@@ -41,16 +41,13 @@
 }
 
 .bar-x {  /* button */
-  display: flex;
-  justify-content: center;
-  vertical-align: middle;
   all: unset;
   
   font-family: "Inter", "sans-serif";
   font-weight: 600;
   border-radius: 10px;
 
-  color: #e79e9e;
+  color: #fff;
   width: 20px;
   height: 15px;
   background-color: #eb6666;
@@ -64,7 +61,6 @@
 }
 
 .bar-x:active{
-  color: #eb6666;
   background-color: #c25555;
 }
 
