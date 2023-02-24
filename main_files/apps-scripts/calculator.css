@@ -1,12 +1,11 @@
-.modal-container {
+/* .modal-container {
   display: flex;
   align-items: center;
   justify-content: center;
   visibility: visible;
 
-  /* transform: translate(-91px, 1100%) scale(0.1); */
   padding: 10px 0px;
-}
+} */
 
 .calc-modal {
   text-align: center;
@@ -19,6 +18,10 @@
   max-width: 375px;
   min-height: 640px;
   overflow: hidden;
+  position: absolute;
+  bottom: 0%;
+  transform: translate(-48%, 35.5%) scale(0.1);
+  visibility: collapse;
 }
 
 .bar {
