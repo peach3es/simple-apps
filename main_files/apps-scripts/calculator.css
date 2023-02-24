@@ -26,7 +26,7 @@
   /* background-color: #313541; */
   background-color: #22252d;
 
-  width: 95%;
+  width: clamp(1rem, 95%, 32rem);
   height: 25px;
   justify-content: right;
   align-items: center;
@@ -46,12 +46,12 @@
   font-family: "Inter", "sans-serif";
   font-weight: 500;
   color: #949fc0;
-  padding-right: 69%;
+  padding: 0 69% 0 0;
 }
 
 .bar-x {  /* button */
   all: unset;
-  
+
   font-family: "Inter", "sans-serif";
   font-weight: 600;
   border-radius: 10px;
