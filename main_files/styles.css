@@ -42,17 +42,18 @@
   all: unset;
   height: 125px;
   width: 125px;
-
-  background-color: antiquewhite;
+  background-color: #faebd7;
   border-radius: 15px;
   padding: 20px;
-
+  border: 3px solid #faebd7;
   cursor: pointer;
+  transition: color 200ms ease-in-out, background-color 200ms ease-in-out 100ms;
 }
 
-/* .box:hover {
-
-} */
+.box:hover {
+  color: antiquewhite;
+  background-color: transparent;
+}
 
 #app-title {
   display: table-cell;
