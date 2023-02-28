@@ -1,6 +1,6 @@
 
 function openCalc(){
-    const show = document.querySelector(".modal-container");
+    const show = document.querySelector(".calc-modal");
     show.classList.add("show");
     console.log("calc opened!");
 }
