@@ -37,7 +37,19 @@
   margin: 100px auto;
   padding: 1rem;
 
+  transform: translateY(-330%);
 }
+
+.movedown{
+  transition: transform 500ms ease-in-out;
+  transform: translateY(-20%);
+}
+
+.moveup{
+  transition: transform 500ms ease-in-out;
+  transform: translateY(-330%);
+}
+
 .box {
   all: unset;
   height: 125px;
