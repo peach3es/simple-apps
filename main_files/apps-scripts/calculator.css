@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   transform: scale(0.1);
+  transition: transform 300ms;
 
   padding: 10px 0px;
 }
@@ -19,6 +20,11 @@
   max-width: 375px;
   min-height: 640px;
   overflow: hidden;
+}
+
+.show{
+  display: flex;
+  transform: scale(1);
 }
 
 .bar {
