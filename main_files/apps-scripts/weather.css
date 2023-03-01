@@ -1,22 +1,16 @@
-@import "/main_files/apps-scripts/calculator.css";
-
-
-.modal-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    padding: 50px 0px;
-  }
-
-.weather-modal{
+.weather-modal {
     position: absolute;
     justify-items: center;
     text-align: center;
     overflow: hidden;
 
-    width: 375px;
-    max-width: 375px;
-    min-height: 640px;
+    width: 800px;
+    max-width: 800px;
+    min-height: 685.25px;
     background-color: #081B24;
+    border-left: 2px solid rgba(255, 255, 255, 0.26);
+    border-top: 2px solid rgba(255, 255, 255, 0.26);
+    box-shadow: 10px 8px 16px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 20px;
+    /* visibility: hidden; */
 }
