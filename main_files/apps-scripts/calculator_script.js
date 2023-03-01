@@ -84,7 +84,7 @@ function CleanOutput(output) {
     }
   } else if (decimal){
     output_array.push(".");
-    output_array.push(decimal);
+    output_array.push(Math.round(decimal*1000)/1000);
   }
 
   return output_array.join("");
