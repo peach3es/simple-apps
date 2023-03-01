@@ -42,14 +42,40 @@
   transform: translateY(-330%);
 }
 
-.movedown{
-  transition: transform 500ms ease-in-out;
-  transform: translateY(-20%);
+@media screen and (max-width: 695px){
+  .app-container{
+    transform: translateY(-200%);
+  }
+}
+
+@media screen and (max-width: 508px){
+  .app-container{
+    transform: translateY(-150%);
+  }
 }
 
 .moveup{
   transition: transform 500ms ease-in-out;
   transform: translateY(-330%);
+}
+
+@media screen and (max-width: 695px){
+  .app-container{
+    transition: none;
+    transform: translateY(-200%);
+  }
+}
+
+@media screen and (max-width: 508px){
+  .app-container{
+    transition: none;
+    transform: translateY(-150%);
+  }
+}
+
+.movedown{
+  transition: transform 500ms ease-in-out;
+  transform: translateY(-20%);
 }
 
 .box {
