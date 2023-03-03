@@ -11,10 +11,16 @@
     min-height: 685.25px;
     margin: auto 100px;
     
-    background-color: #081B24;
-    border-left: 2px solid rgba(255, 255, 255, 0.26);
-    border-top: 2px solid rgba(255, 255, 255, 0.26);
-    box-shadow: 10px 8px 16px 0 rgba(31, 38, 135, 0.37);
-    border-radius: 20px;
+    background: rgba( 58, 58, 58, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     /* visibility: hidden; */
+}
+
+img{
+    width: 128;
+    height: 128;
 }
