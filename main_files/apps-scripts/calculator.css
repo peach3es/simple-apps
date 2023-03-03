@@ -21,7 +21,8 @@
 
   width: 100%;
   max-width: 375px;
-  min-height: 640px;
+  min-height: 69vh;
+  margin: auto 4vw;
   overflow: hidden;
   opacity: 0;
 

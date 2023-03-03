@@ -1,12 +1,16 @@
 .weather-modal {
     position: absolute;
+    display: flex;
     justify-items: center;
-    text-align: center;
+
     overflow: hidden;
 
-    width: 800px;
+    /* width: 800px; */
+    width: clamp(375px, 100%, 100vw);
     max-width: 800px;
     min-height: 685.25px;
+    margin: auto 100px;
+    
     background-color: #081B24;
     border-left: 2px solid rgba(255, 255, 255, 0.26);
     border-top: 2px solid rgba(255, 255, 255, 0.26);
