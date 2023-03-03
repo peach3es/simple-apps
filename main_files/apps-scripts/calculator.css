@@ -19,7 +19,8 @@
   transform: scale(0.1);
   translate: 0 -20%;
 
-  width: 100%;
+  /* width: clamp(375px, 60%, 100vw); */
+  width: 375px;
   max-width: 375px;
   min-height: 69vh;
   margin: auto 4vw;

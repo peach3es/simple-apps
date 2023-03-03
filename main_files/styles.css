@@ -23,7 +23,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  position: relative;
+  /* position: relative; */
 
   width: clamp(1rem, 60%, 32rem);
   min-height:max-content;
