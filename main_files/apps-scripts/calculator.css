@@ -22,8 +22,8 @@
   /* width: clamp(375px, 60%, 100vw); */
   width: 375px;
   max-width: 375px;
-  min-height: 69vh;
-  margin: auto 4vw;
+  min-height: 35rem;
+  margin: auto 20px;
   overflow: hidden;
   opacity: 0;
 
