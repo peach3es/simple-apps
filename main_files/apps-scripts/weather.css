@@ -1,28 +1,22 @@
 .weather-modal {
-    position: absolute;
-    display: flex;
-    justify-items: center;
+  position: absolute;
+  display: flex;
+  justify-items: center;
+  overflow: hidden;
+  width: clamp(40rem, 100%, 60rem);
+  min-height: 45rem;
+  margin: auto 100px;
 
-    overflow: hidden;
-
-    /* width: 800px; */
-    width: clamp(375px, 85%, 100vw);
-    max-width: 800px;
-    min-height: 685.25px;
-    margin: auto 100px;
-    
-    background: rgba( 58, 58, 58, 0.05 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 3.5px );
-    -webkit-backdrop-filter: blur( 3.5px );
-    border-radius: 20px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    visibility: hidden;
+  background: rgba(58, 58, 58, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* visibility: visible; */
 }
 
-img{
-    width: 128;
-    height: 128;
+img {
+  width: 128;
+  height: 128;
 }
-
-
