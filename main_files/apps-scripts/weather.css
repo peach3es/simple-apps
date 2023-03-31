@@ -13,7 +13,53 @@
   -webkit-backdrop-filter: blur(3.5px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  /* visibility: visible; */
+
+  transform: scale(0.1);
+  opacity: 0;
+}
+
+.show {
+  transition: translate 300ms ease-in-out, opacity 500ms ease-in-out,
+    transform 500ms ease-in-out;
+  opacity: 1;
+  transform: scale(1);
+  translate: 0 0%;
+}
+
+.remove {
+  transition: translate 300ms ease-in-out, opacity 500ms ease-in-out,
+    transform 500ms ease-in-out;
+  opacity: 0;
+  transform: scale(0.1);
+  translate: 0 -20%;
+}
+
+.weather-bar {
+  display: flex;
+  justify-content: right;
+}
+
+.weather-bar-x {
+  all: unset;
+
+  font-family: "Inter", "sans-serif";
+  font-weight: 600;
+  border-radius: 10px;
+
+  width: 20px;
+  height: 15px;
+
+  background: rgba(190, 87, 87, 0.795);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  margin: 0 5px 0 0;
+  cursor: pointer;
+}
+
+.weather-bar-x:hover {
+  box-shadow: inset 0px 0px 8px rgba(226, 190, 190, 0.2);
 }
 
 img {
