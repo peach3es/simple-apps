@@ -19,8 +19,8 @@ function closeCalc() {
 function openWeather() {
   const show = document.querySelector(".weather-modal");
   const movedown = document.querySelector(".app-container");
-  show.classList.add("show");
-  show.classList.remove("remove");
+  show.classList.add("show-weather");
+  show.classList.remove("remove-weather");
   movedown.classList.add("movedown");
   movedown.classList.remove("moveup");
 }
@@ -28,8 +28,8 @@ function openWeather() {
 function closeWeather() {
   const remove = document.querySelector(".weather-modal");
   const moveup = document.querySelector(".app-container");
-  remove.classList.remove("show");
-  remove.classList.add("remove");
+  remove.classList.remove("show-weather");
+  remove.classList.add("remove-weather");
   moveup.classList.remove("movedown");
   moveup.classList.add("moveup");
 }
