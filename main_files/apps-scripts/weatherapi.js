@@ -1,5 +1,4 @@
-import * as dotenv from "dotenv";
-dotenv.config();
+import API_KEY from "../sensitive/apikey.js";
 
 function getWeather() {
   let temp = document.getElementById("temp");
@@ -7,15 +6,15 @@ function getWeather() {
   let location = document.getElementById("location");
 
   let api = "https://api.openweathermap.org/data/2.5/weather";
-  let apiKey = process.env.API_KEY;
+  let apiKey = API_KEY;
 
   location.innerHTML = "Locating...";
 
   navigator.geolocation.getCurrentPosition(success, error);
 
   function success(position) {
-    latitude = position.coords.latitude;
-    longitude = position.coords.longitude;
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
 
     let apiURL = `${api}?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
