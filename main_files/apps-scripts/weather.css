@@ -77,9 +77,29 @@
 
 .basic-info {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 5px;
-  gap: 10px;
+  gap: 5px;
+  height: 180px;
+
+  color: #ddddff;
+}
+.basic-info p {
+  font-family: "Oswald", "sans-serif";
+}
+
+#location {
+  font-size: 40px;
+  font-weight: 600;
+}
+#description {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#temp {
+  font-size: 60px;
+  font-weight: 600;
 }
 
 img {
