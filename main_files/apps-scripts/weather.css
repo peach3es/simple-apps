@@ -75,14 +75,39 @@
   box-shadow: inset 0px 0px 8px rgba(226, 190, 190, 0.2);
 }
 
+.weather-section {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+
+  gap: 15px;
+  padding: 20px;
+}
+
+.weather-forecast {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  gap: 15px;
+}
+
 .basic-info {
   display: flex;
   flex-direction: column;
   margin: 5px;
   gap: 5px;
-  height: 180px;
+  padding: 15px;
+  height: fit-content;
 
   color: #ddddff;
+
+  background: rgba(255, 255, 255, 0);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .basic-info p {
   font-family: "Oswald", "sans-serif";
@@ -102,7 +127,10 @@
   font-weight: 600;
 }
 
-img {
-  width: 128;
-  height: 128;
+.today-forecast {
+  border-radius: 10px;
+}
+
+.air-condition {
+  border-radius: 10px;
 }
