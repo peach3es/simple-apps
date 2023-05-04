@@ -80,7 +80,7 @@
   flex-direction: row;
   flex: 1;
 
-  gap: 15px;
+  gap: 20px;
   padding: 20px;
 }
 
@@ -89,14 +89,12 @@
   flex-direction: column;
   flex-grow: 1;
 
-  gap: 15px;
+  gap: 25px;
 }
 
 .basic-info {
   display: flex;
   flex-direction: column;
-  margin: 5px;
-  gap: 5px;
   padding: 15px;
   height: fit-content;
 
@@ -111,6 +109,7 @@
 }
 .basic-info p {
   font-family: "Oswald", "sans-serif";
+  padding: 5px;
 }
 
 #location {
@@ -120,17 +119,44 @@
 #description {
   font-size: 20px;
   font-weight: 500;
+  margin-top: -10px;
+  margin-bottom: 30px;
 }
 
 #temp {
   font-size: 60px;
   font-weight: 600;
+  margin-top: 30px;
 }
 
 .today-forecast {
   border-radius: 10px;
+  flex-grow: 1;
+
+  background: rgba(63, 127, 180, 0.25);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.today-forecast h1,
+.air-condition h1 {
+  font-family: "Oswald", "sans-serif";
+  padding: 15px;
+  font-size: 20px;
+  color: #d2d2f1;
 }
 
 .air-condition {
   border-radius: 10px;
+  flex: 1;
+
+  background: rgba(63, 127, 180, 0.25);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
