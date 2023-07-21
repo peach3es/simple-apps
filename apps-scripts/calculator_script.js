@@ -83,7 +83,11 @@ function CleanOutput(output) {
     }
   } else if (decimal) {
     output_array.push(".");
-    output_array.push(decimal.slice(0, 7));
+    output_array.push(
+      parseFloat("0." + decimal)
+        .toFixed(7)
+        .slice(2)
+    );
   }
 
   return output_array.join("");
