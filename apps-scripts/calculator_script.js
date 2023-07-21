@@ -38,11 +38,10 @@ for (let key of keys) {
 
       display_input.innerHTML = CleanInput(input);
     } else {
-      if(ValidateInput(value)){
+      if (ValidateInput(value)) {
         input += value;
         display_input.innerHTML = CleanInput(input);
       }
-      
     }
   });
 }
@@ -78,30 +77,30 @@ function CleanOutput(output) {
 
   let output_array = output_string.split("");
 
-  if(output_array.length > 3 && output_string != "Infinity"){
-    for(let i = output_array.length - 3; i > 0; i -= 3){
+  if (output_array.length > 3 && output_string !== "Infinity") {
+    for (let i = output_array.length - 3; i > 0; i -= 3) {
       output_array.splice(i, 0, ",");
     }
-  } else if (decimal){
+  } else if (decimal) {
     output_array.push(".");
-    output_array.push(Math.round(decimal*1000)/1000);
+    output_array.push(decimal.slice(0, 7));
   }
 
   return output_array.join("");
 }
 
-function ValidateInput(value){
+function ValidateInput(value) {
   let last_input = input.slice(-1);
-  let operators = ["&times;", "&divide;", "&plus;", "&times;"]
+  let operators = ["&times;", "&divide;", "&plus;", "&times;"];
 
-  if (value == "." && last_input == "."){
+  if (value == "." && last_input == ".") {
     return false;
   }
 
-  if(operators.includes(value)){
-    if(operators.includes(last_input)){
+  if (operators.includes(value)) {
+    if (operators.includes(last_input)) {
       return false;
-    } else{
+    } else {
       return true;
     }
   }
@@ -109,13 +108,13 @@ function ValidateInput(value){
   return true;
 }
 
-function PrepareInput(input){
+function PrepareInput(input) {
   let input_array = input.split("");
 
-  for(let i = 0; i<input_array.length; i++){
-    if(input_array[i] == "%"){
+  for (let i = 0; i < input_array.length; i++) {
+    if (input_array[i] == "%") {
       input_array[i] = "/100";
-    } 
+    }
   }
 
   return input_array.join("");
