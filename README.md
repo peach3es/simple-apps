@@ -4,8 +4,9 @@ Website containing simple applications like calculator, weather app &amp; to-do 
 ## Table of Contents
 
 - Calculator
-- Weather App
-- To-Do List
+- Weather App [work in progress]
+- To-Do List [work in progress]
+- Transit App [work in progress]
 
 ### Calculator 📱
 Simple calculator that allows you to do simple calculations.
@@ -15,4 +16,7 @@ Simple weather application that shows local weather.
 
 ### To-Do List ✅
 Simple to-do list that allows you to create a list and check them.
+
+### Transit App 🚇
+Simple transit application that allows you to check transit schedules and plan routes.
 
