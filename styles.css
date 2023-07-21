@@ -26,7 +26,7 @@
   /* position: relative; */
 
   width: clamp(1rem, 60%, 32rem);
-  min-height:max-content;
+  min-height: max-content;
   min-width: fit-content;
 
   background: rgba(76, 67, 67, 0.25);
@@ -42,26 +42,26 @@
   transform: translateY(-330%);
 }
 
-.moveup{
+.moveup {
   transition: transform 500ms ease-in-out;
   transform: translateY(-330%);
 }
 
-@media screen and (max-width: 695px){
-  .app-container{
+@media screen and (max-width: 695px) {
+  .app-container {
     transition: none;
     transform: translateY(-200%);
   }
 }
 
-@media screen and (max-width: 508px){
-  .app-container{
+@media screen and (max-width: 508px) {
+  .app-container {
     transition: none;
     transform: translateY(-140%);
   }
 }
 
-.movedown{
+.movedown {
   transition: transform 500ms ease-in-out;
   transform: translateY(-20%);
 }
@@ -75,7 +75,8 @@
   padding: 20px;
   border: 3px solid #faebd7;
   cursor: pointer;
-  transition: color 200ms ease-in-out, background-color 150ms ease-in-out 100ms, transform 250ms ease-in-out;
+  transition: color 200ms ease-in-out, background-color 150ms ease-in-out 100ms,
+    transform 250ms ease-in-out;
 }
 
 .box:hover {
@@ -83,11 +84,10 @@
   background-color: transparent;
   transform: scale(1.03);
 }
-.box:active{
+.box:active {
   transform: scale(1);
   background-color: rgba(250, 235, 215, 0.199);
 }
-
 
 #app-title {
   display: table-cell;
@@ -105,14 +105,18 @@
 }
 
 body {
-  background: radial-gradient(
+  /* background: radial-gradient(
       ellipse at right bottom,
       #80ffdb 5%,
       #6efdd5 25%,
       #66a1e9 50%,
       #5390d9 100%
     )
-    no-repeat;
+    no-repeat; */
+  background-color: #0e2a47;
+  background-image: url(/components/background/World\ Map\ default.svg);
+  background-repeat: no-repeat;
+  background-size: center;
   background-attachment: fixed;
   padding-bottom: 20px;
   overflow-y: scroll;
