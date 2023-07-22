@@ -113,11 +113,12 @@ body {
       #5390d9 100%
     )
     no-repeat; */
-  background-color: #0e2a47;
-  background-image: url(/components/background/World\ Map\ default.svg);
+  background-image: url(/components/background/78.-Night-sky.jpg);
   background-repeat: no-repeat;
-  background-size: center;
+  background-size: cover;
   background-attachment: fixed;
+  background-position: center;
+
   padding-bottom: 20px;
   overflow-y: scroll;
   overflow-x: hidden;
