@@ -29,7 +29,7 @@
   min-height: max-content;
   min-width: fit-content;
 
-  background: rgba(76, 67, 67, 0.25);
+  background: rgba(134, 183, 214, 0.308);
   border-radius: 20px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3px);
@@ -70,17 +70,17 @@
   all: unset;
   height: 125px;
   width: 125px;
-  background-color: #faebd7;
+  background-color: #e7e5f2;
   border-radius: 15px;
   padding: 20px;
-  border: 3px solid #faebd7;
+  border: 3px solid #e7e5f2;
   cursor: pointer;
   transition: color 200ms ease-in-out, background-color 150ms ease-in-out 100ms,
     transform 250ms ease-in-out;
 }
 
 .box:hover {
-  color: antiquewhite;
+  /* color: #e7e5f2; */
   background-color: transparent;
   transform: scale(1.03);
 }

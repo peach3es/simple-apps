@@ -7,7 +7,7 @@
   min-height: 45rem;
   margin: auto 100px;
 
-  background: rgba(22, 22, 22, 0.301);
+  background: #9bbbe85d;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
@@ -97,15 +97,10 @@
   padding: 15px;
   height: 60%;
 
-  color: #dfddff;
+  color: #354572d3;
+  text-shadow: 0px 0px 6px rgba(88, 88, 88, 0.342);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 10px;
-
-  /* background: rgba(255, 255, 255, 0.233);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
-  border-radius: 10px; */
 }
 .basic-info p {
   font-family: "Oswald", "sans-serif";
@@ -115,6 +110,7 @@
 #location {
   font-size: 40px;
   font-weight: 600;
+  /* color: rgba(240, 255, 255, 0.808); */
 }
 #description {
   font-size: 20px;
@@ -122,6 +118,7 @@
   margin-left: 5px;
   margin-top: -10px;
   margin-bottom: 30px;
+  color: rgba(240, 255, 255, 0.808);
 }
 
 #temp {
@@ -129,14 +126,14 @@
   font-weight: 600;
   margin-top: 95px;
   padding-left: 30px;
+  color: rgba(240, 255, 255, 0.808);
 }
 
 .today-forecast {
   border-radius: 10px;
   flex-grow: 1;
 
-  background: rgba(158, 186, 239, 0.3);
-  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  background: rgba(183, 193, 235, 0.3);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   border-radius: 10px;
@@ -147,7 +144,8 @@
   font-family: "Oswald", "sans-serif";
   padding: 15px;
   font-size: 22px;
-  color: #dfddff;
+  color: #354572d3;
+  /* color: rgba(240, 255, 255, 0.808); */
 }
 
 .air-condition {
@@ -156,8 +154,7 @@
   flex-direction: column;
   flex: 1;
 
-  background: rgba(158, 186, 239, 0.3);
-  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  background: rgba(183, 193, 235, 0.3);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   border-radius: 10px;
@@ -170,7 +167,9 @@
     .condition-info h2 {
       font-size: 18px;
       font-family: "Oswald", "sans-serif";
-      color: #dfddff;
+      /* color: #354572d3; */
+      color: rgba(240, 255, 255, 0.808);
+      /* text-shadow: 0px 0px 6px rgba(88, 88, 88, 0.342); */
     }
 
     .condition-info {
