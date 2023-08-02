@@ -160,7 +160,7 @@ h1 {
 
   .conditions {
     display: grid;
-    gap: 35px;
+    gap: 30px;
     padding: 0 15px 15px;
 
     .condition-info h2 {
@@ -172,7 +172,23 @@ h1 {
 
     .condition-info {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+
+      .icon-name {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+
+    .condition-value {
+      font-size: 26px;
+      font-weight: 500;
+      margin-top: 5px;
+      font-family: "Oswald", "sans-serif";
+      color: rgba(240, 255, 255, 0.808);
+      text-shadow: 0px 0px 6px rgba(88, 88, 88, 0.342);
     }
   }
 }

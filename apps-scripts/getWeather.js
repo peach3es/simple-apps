@@ -29,16 +29,15 @@ function getWeather() {
       .then((data) => {
         console.log(data);
 
-        let temperature = data.main.temp;
-        temp.innerHTML = `${temperature.toFixed(0)}°C`;
+        temp.innerHTML = `${data.main.temp.toFixed(0)}°C`;
         // location.innerHTML = `${data.name} (${latitude}° ${longitude}°)`;
         location.innerHTML = `${data.name}`;
         desc.innerHTML = data.weather[0].description;
-        let real_feel = data.main.feels_like;
-        rf.innerHTML = `${real_feel.toFixed(0)}°C`;
-        humidity.innerHTML = data.main.humidity;
-        pressure.innerHTML = data.main.pressure;
-        wind.innerHTML = data.wind.speed;
+
+        rf.innerHTML = `${data.main.feels_like.toFixed(1)}°C`;
+        humidity.innerHTML = `${data.main.humidity.toFixed(0)}%`;
+        pressure.innerHTML = `${data.main.pressure.toFixed(1)} hPa`;
+        wind.innerHTML = `${data.wind.speed.toFixed(2)} km/h`;
       });
 
     fetch(apiURL2)
@@ -50,6 +49,7 @@ function getWeather() {
 
   function error() {
     location.innerHTML = "Unable to retrieve your location";
+    console.log(error);
   }
 }
 
