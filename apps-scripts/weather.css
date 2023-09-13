@@ -49,7 +49,8 @@
 .weatherclock {
   font-family: "Inter", "sans-serif";
   font-weight: 500;
-  color: #c5d3fd;
+  /* color: #c5d3fd; */
+  color: #354572d3;
   margin-right: auto;
 }
 

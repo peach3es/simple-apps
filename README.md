@@ -8,8 +8,8 @@ The website can be accessed here: https://simpleapps.netlify.app/
 
 - Calculator
 - Weather App [work in progress]
-- To-Do List [work in progress]
-- Transit App [work in progress]
+- To-Do List [to be added]
+- Transit App [to be added]
 
 ### Calculator 📱
 
