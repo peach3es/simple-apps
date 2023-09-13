@@ -2,6 +2,8 @@
 
 Website containing simple applications like calculator, weather app, to-do list &amp; transit app. The website offers a better organization & workflow by providing those simple tools. Intended for practicing HTML, CSS &amp; JS skills.
 
+The website can be accessed here: https://simpleapps.netlify.app/
+
 ## Table of Contents
 
 - Calculator
