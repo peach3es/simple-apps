@@ -4,3 +4,5 @@ sensitive
 
 #node modules
 node_modules
+# Local Netlify folder
+.netlify
