@@ -11,7 +11,7 @@ function getWeather() {
 
   let api = "https://api.openweathermap.org/data/2.5/weather";
   let api2 = "https://api.openweathermap.org/data/2.5/forecast";
-  let apiKey = process.env.API_KEY;
+  const apiKey = process.env.API_KEY;
 
   location.innerHTML = "Locating...";
 
