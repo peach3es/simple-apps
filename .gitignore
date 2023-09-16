@@ -1,5 +1,6 @@
 #sensitive data
 sensitive
+.env
 
 #node modules
 node_modules
