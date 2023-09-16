@@ -1,4 +1,3 @@
-require("dotenv").config();
 
 function getWeather() {
   let temp = document.getElementById("temp");
