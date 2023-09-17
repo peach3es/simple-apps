@@ -26,10 +26,10 @@ function Time() {
   // sec = update (sec);
 
   document.getElementById("digital-clock").innerText =
-    hr + " : " + min + " " + period;
+    hr + ":" + min + " " + period;
 
   document.getElementById("digital-clock-2").innerText =
-    hr + " : " + min + " " + period;
+    hr + ":" + min + " " + period;
 
   setTimeout(Time, 1000);
 }

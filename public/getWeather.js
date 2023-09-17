@@ -9,8 +9,8 @@ function getWeather(latitude, longitude) {
 
   location.innerHTML = "Locating...";
 
-  const apiURL1 = `/.netlify/functions/weather-token?lat=${latitude}&lon=${longitude}`;
-  const apiURL2 = `/.netlify/functions/weather-token?lat=${latitude}&lon=${longitude}`;
+  const apiURL1 = `/.netlify/functions/weather-token/weather-token?lat=${latitude}&lon=${longitude}`;
+  const apiURL2 = `/.netlify/functions/weather-token/weather-token?lat=${latitude}&lon=${longitude}`;
 
   fetch(apiURL1)
     .then((response) => response.json())
@@ -40,8 +40,8 @@ if ("geolocation" in navigator) {
   // const apiKey = process.env.API_KEY;
 
   navigator.geolocation.getCurrentPosition(function success(position) {
-    let latitude = position.coords.latitude;
-    let longitude = position.coords.longitude;
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
 
     getWeather(latitude, longitude);
   });
