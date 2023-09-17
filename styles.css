@@ -1,5 +1,5 @@
-@import "/apps-scripts/calculator.css";
-@import "/apps-scripts/weather.css";
+@import "/public/calculator.css";
+@import "/public/weather.css";
 
 * {
   margin: 0;
