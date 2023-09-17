@@ -11,6 +11,8 @@ function getWeather() {
 
   location.innerHTML = "Locating...";
 
+  const { API_KEY, API_URL, API_URL2 } = process.env;
+
   if ("geolocation" in navigator) {
     // let api = "https://api.openweathermap.org/data/2.5/weather";
     // let api2 = "https://api.openweathermap.org/data/2.5/forecast";
@@ -20,7 +22,6 @@ function getWeather() {
       let latitude = position.coords.latitude;
       let longitude = position.coords.longitude;
 
-      const { API_KEY, API_URL, API_URL2 } = process.env;
       const apiURL1 = `${API_URL}?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`;
       const apiURL2 = `${API_URL2}?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`;
 
@@ -30,7 +31,6 @@ function getWeather() {
           console.log(data);
 
           temp.innerHTML = `${data.main.temp.toFixed(0)}°C`;
-          // location.innerHTML = `${data.name} (${latitude}° ${longitude}°)`;
           location.innerHTML = `${data.name}`;
           desc.innerHTML = data.weather[0].description;
 
