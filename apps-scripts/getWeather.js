@@ -14,14 +14,6 @@ function getWeather() {
     let api2 = "https://api.openweathermap.org/data/2.5/forecast";
     // const apiKey = process.env.API_KEY;
 
-    let apiKey;
-
-    fetch(".netlify/functions/api")
-      .then((response) => response.json())
-      .then((json) => {
-        apiKey = json.apiKey;
-      });
-
     navigator.geolocation.getCurrentPosition(function success(position) {
       let latitude = position.coords.latitude;
       let longitude = position.coords.longitude;
